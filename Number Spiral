@@ -1,0 +1,91 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+#define ami                ios_base::sync_with_stdio(false);
+#define life                cin.tie(__null);
+#define boye                  cout.tie(__null) ;
+#define sv(v)                    v.begin(), v.end()
+#define svr(v)                    v.rbegin(), v.rend()
+#define ma                      map<ll,ll> 
+#define pa                    pair<ll,ll>
+#define sa                  set<ll>
+#define yesss                     cout << "YES\n";
+#define noooo                   cout << "NO\n";
+#define se                    ' '
+#define testcase                ll tt  ;  cin>> tt  ;  while (tt --)
+#define fn(a,b,i)                for (ll i = a; i < b; i++)
+#define ffn(a,b,i)                for (ll i = a; i <=b; i++)
+#define back(a,b,i)                 for(ll i = a ; i>=b ; i-- )
+#define nina_fortner            freopen("input.txt", "r", stdin);  freopen("output.txt", "w", stdout);
+
+
+
+void her_husband() {
+   ll x , y , i , j ;
+    cin >> x >> y ;
+    ll val_x = x - 1 ;
+    ll val_y = y -1 ;
+
+    if(x>=y) {
+        if(x%2==0) {
+             cout << pow(val_x,2) + x + (x-y) << endl;
+             // (val_x)^2 make  a square + then add a colume + (x-y) ===> make i*i matrix 
+             
+        }
+        else {
+            cout << pow(val_x,2)+y << endl;
+
+        }
+        return ;
+    }
+
+    if(y%2==0) {
+        cout << pow(val_y,2) + x << endl;
+        return;
+    }
+    cout << pow(val_y,2) + y + (y-x) << endl;
+    
+
+}
+
+int main() {
+ 
+ ami life boye
+ 
+
+    #ifndef  ONLINE_JUDGE
+     nina_fortner
+    #endif 
+ testcase
+   {
+      
+       
+       her_husband();
+     
+      
+       
+      
+  
+ 
+      }
+ 
+ 
+ 
+return 0;
+   
+ 
+ 
+ 
+   }   
+
+
+
+
+
+
+
+
+
+
+
