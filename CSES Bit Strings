@@ -1,0 +1,93 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+#define ami                ios_base::sync_with_stdio(false);
+#define life                cin.tie(__null);
+#define boye                  cout.tie(__null) ;
+#define sv(v)                    v.begin(), v.end()
+#define svr(v)                    v.rbegin(), v.rend()
+#define ma                      map<ll,ll> 
+#define pa                    pair<ll,ll>
+#define sa                  set<ll>
+#define yesss                     cout << "YES\n";
+#define noooo                   cout << "NO\n";
+#define se                    ' '
+#define testcase                ll tt  ;  cin>> tt  ;  while (tt --)
+#define fn(a,b,i)                for (ll i = a; i < b; i++)
+#define ffn(a,b,i)                for (ll i = a; i <=b; i++)
+#define back(a,b,i)                 for(ll i = a ; i>=b ; i-- )
+#define nina_fortner            freopen("input.txt", "r", stdin);  freopen("output.txt", "w", stdout);
+
+
+ const long long MOD = 1000000007;
+
+void her_husband() {
+  int n;
+    cin >> n;
+
+    long long result = 1;
+    long long base = 2;
+
+    while (n > 0) {
+        if (n % 2 == 1) 
+        { // If n is odd, multiply the base with result
+            result = (result * base) % MOD;
+        }
+        base = (base * base) % MOD; 
+        n /= 2; 
+    }
+
+    cout << result << endl;
+    
+
+}
+
+int main() {
+ 
+ ami life boye
+ 
+
+    #ifndef  ONLINE_JUDGE
+     nina_fortner
+    #endif 
+ //testcase
+   {
+      
+       
+       her_husband();
+     
+      
+       
+      
+  
+ 
+      }
+ 
+ 
+ 
+return 0;
+   
+ 
+ 
+ 
+   }   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
