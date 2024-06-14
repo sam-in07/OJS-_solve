@@ -1,0 +1,101 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+#define ami                ios_base::sync_with_stdio(false);
+#define life                cin.tie(__null);
+#define boye                  cout.tie(__null) ;
+#define sv(v)                    v.begin(), v.end()
+#define svr(v)                    v.rbegin(), v.rend()
+#define ma                      map<ll,ll> 
+#define pa                    pair<ll,ll>
+#define sa                  set<ll>
+#define yesss                     cout << "YES\n";
+#define noooo                   cout << "NO\n";
+#define se                    ' '
+#define testcase                ll tt  ;  cin>> tt  ;  while (tt --)
+#define fn(a,b,i)                for (ll i = a; i < b; i++)
+#define ffn(a,b,i)                for (ll i = a; i <=b; i++)
+#define back(a,b,i)                 for(ll i = a ; i>=b ; i-- )
+#define nina_fortner            freopen("input.txt", "r", stdin);  freopen("output.txt", "w", stdout);
+
+
+ const long long MOD = 1000000007;
+
+int primeFactors(int n){
+    while(n%2==0){
+        return 2;
+    }
+    for (int i=3;i<=sqrt(n);i=i+2){
+        while (n%i==0){
+            return i;
+        }
+    } 
+    if(n>2){
+        return n;
+    }
+    return -1;
+}
+void her_husband(){
+     ll i , n ;
+	 cin >> n ;
+ vector<ll>v(n);
+ //map<ll,ll>mui;
+ set<ll>mui ;
+ for(i=0;i<n;i++)  {
+  cin >> v[i];
+  mui.insert(v[i]);
+ }
+ 
+ cout << mui.size() << endl;
+
+}
+
+int main() {
+ 
+ ami life boye
+ 
+
+    #ifndef  ONLINE_JUDGE
+     nina_fortner
+    #endif 
+ //testcase
+   {
+      
+       
+       her_husband();
+     
+      
+       
+      
+  
+ 
+      }
+ 
+ 
+ 
+return 0;
+   
+ 
+ 
+ 
+   }   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
